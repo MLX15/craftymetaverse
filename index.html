@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>CraftyMetaverse</title>
+    <!-- <link
+    rel="preload"
+    href="fonts/GilroyBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/GilroyMedium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/GilroyRegular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/HeliosBlackC.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/HeliosExtCBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/MandatoryRegular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/PlusJakartaRegular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/PlusJakartaMedium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/PlusJakartaLight.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/PlusJakartaBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  /> -->
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js" integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js" integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/ac_quicktime.js" type="text/javascript"></script>
+</head>
+
+<body class="page__body">
+    <div class="site-container">
+        <div id="page-preloader" class="preloader">
+            <div class="loader">
+                <img src="img/loader-img.svg" alt="logo">
+                <h3 class="preloader__text">Crafty Metaverse <br> is loading… <span id="load_perc">0%</span></h3>
+            </div>
+
+            <div class="marquee marquee-2 preloader__marquee">
+                <div class="marquee__inner marquee__inner-2" aria-hidden="true">
+                    <span>Please wait   ✦   Please wait   ✦</span>
+                    <span>Please wait   ✦   Please wait   ✦</span>
+                    <span>Please wait   ✦   Please wait   ✦</span>
+                    <span>Please wait   ✦   Please wait   ✦</span>
+                </div>
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="container-fluid header__container">
+                <a href="#" class="logo">
+      <img
+        loading="lazy"
+        src="img/logo.png"
+        class="image"
+        alt="logo"
+      />
+    </a>
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="nav" title="main menu">
+                    <ul class="list-reset nav__list">
+                        <li class="nav__item" id="to-hero-btn"><a href="#intro" class="nav__link">Home</a></li>
+                        <li class="nav__item" id="to-about-btn">
+                            <a href="#about" class="nav__link" data-scroll>About Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#roadmap" class="nav__link" data-scroll>Road Map</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#tokenomics" class="nav__link" data-scroll>Tokenomics</a>
+                        </li>
+                        <li class="nav__item">
+                            <a target="_blank" href="/files/crafty-whitepaper.pdf" class="nav__link" data-scroll>Whitepaper</a>
+                        </li>
+                        <li class="nav__item">
+                            <a target="_blank" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8FEe1E7C2e902C50F34E14fCfc2d8Dfd401e6579&chain=mainnet" class="nav__link nav__link_eth" data-scroll>
+            <img src="img/ethereum.svg" alt="eth">
+            ETH Buy
+          </a>
+                        </li>
+                        <li class="nav__item">
+                            <a target="_blank" href="https://pancakeswap.finance/swap?outputCurrency=0x5CD47AACCA739695cB6722C267FB59Dc63148eAc" class="nav__link" data-scroll>
+            <img src="img/WBNB.svg" alt="eth">
+            BNB Buy
+          </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="intro" id="intro">
+
+                <div class="intro-item" data-scroll-item="1" id="home">
+
+                    <video loop="true" id="galaxy" autoplay="true" class="hero-video galaxy" muted="muted" controls="true" playsinline>
+
+    </video>
+                    <div class="content">
+                        <h3 class="hero__title">
+                            Crafty Metaverse
+                        </h3>
+                        <h1 class="hero__main-title">
+                            A SHARED, IMMERSIVE MULTI-BLOCKCHAIN BASED ✦ METAVERSE ECOSYSTEM
+                        </h1>
+                        <a href="#tokenomics" class="hero__link hero__link_invest btn" data-scroll>Invest Now</a>
+                    </div>
+
+                </div>
+
+                <div class="intro-item" data-scroll-item="2" id="about">
+                    <video id="man" class="hero-video man" muted="muted" controls="true" playsinline>
+      <!-- <source src="img/man.mp4" type="video/mp4"> -->
+    </video>
+
+                    <div class="content2">
+                        <h3 class="about__title hero__title">
+                            Profile
+                        </h3>
+                        <h2 class="about__main-title hero__main-title">
+                            About Us
+                        </h2>
+
+                        <div class="swiper-container-1">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <p class="about__descr">
+                                        Crafty Metaverse is a multi-blockchain based virtual reality metaverse platform to develop the most immersive, imaginative, and addictive gaming experiences. We are providing our gaming community with the near-real-world experience while using their digital
+                                        avatars. Our ecosystem will be a futuristic, decentralized, and persistent 3D virtual metaverse gaming platform especially for crypto enthusiasts, gamers, artists, and metaverse fans.
+                                    </p>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <p class="about__descr">
+                                        As the global pandemic rages on, we have all become living witnesses to periods of unimaginable seclusions. Humans are increasingly becoming more isolated from each other. This continuous isolation has caused the yearning for a 3D/VR space where humans
+                                        can conduct their BAU activities with the feel of a real world. Introducing CRAFTY METAVERSE!
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="progress__wrapper">
+                            <div class="progress swiper-pagination swiper-pagination-1">
+                                <div class="progress-bar swiper-pagination-progressbar-fill"></div>
+                            </div>
+                            <div class="progress__titles">
+                                <h4>1 CHAPTER</h4>
+                                <h4>2</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <video id="explode" class="hero-video explode" muted="muted" controls="true" playsinline>
+    <!-- <source src="img/explode.mp4" type="video/mp4"> -->
+  </video>
+                <video id="explode-reverse" class="hero-video explode-reverse" muted="muted" controls="true" playsinline>
+    <!-- <source src="img/explode-reverse.mp4" type="video/mp4"> -->
+  </video>
+
+                <!-- <video class="space" src="img/space-2.mp4" autoplay loop></video> -->
+            </div>
+            <div class="overflow-cnt">
+                <section class="roadmap" id="roadmap">
+                    <div class="roadmap__container container-equal">
+                        <div class="roadmap__heading" data-aos="fade-in">
+                            <h3 class="roadmap__title hero__title">
+                                Our Way
+                            </h3>
+                            <h2 class="roadmap__main-title hero__main-title">
+                                Roadmap
+                            </h2>
+                        </div>
+                        <div class="roadmap__list-cards">
+                            <svg class="roadmap__path" width="540" height="1639" viewBox="0 0 540 1639" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="t" d="M176 83.5L319.278 303.859C425.131 466.66 409.114 680.129 280.153 825.311V825.311C131.565 992.588 135.591 1245.72 289.423 1408.19L498.5 1629" stroke="url(#paint0_linear_174_239)" stroke-dasharray="1 17"/>
+        <path id="g" d="M171 70.5L252.63 255.571C267.071 288.311 285.743 319.017 308.168 346.902V346.902C417.094 482.345 428.6 671.811 336.864 819.44L302.538 874.681L268.841 918.943C169.838 1048.98 178.853 1231.42 290.195 1351.07V1351.07C301.792 1363.53 312.424 1376.85 322 1390.93L485 1630.5" stroke="url(#paint1_linear_174_239)" stroke-dasharray="1 17"/>
+        <path id="r" d="M112.539 103L299.987 296.89V296.89C422.518 455.324 415.538 678.385 283.341 828.849L269.952 844.088L251.622 869.699C148.643 1013.59 149.804 1207.36 254.5 1350V1350L436.5 1611.5" stroke="url(#paint2_linear_174_239)" stroke-dasharray="1 17"/>
+        <path id="l" d="M138 89.5L285.18 271.862C417.141 435.368 410.182 670.668 268.79 826.09V826.09C117.829 992.03 121.422 1246.61 277.007 1408.22L478 1617" stroke="url(#paint3_linear_174_239)" stroke-dasharray="1 17"/>
+        <path id="p" d="M150 73.5L248.832 259.39C265.765 291.239 287.518 320.28 313.321 345.486V345.486C431.061 460.503 452.797 641.999 365.545 781.566L326.999 843.224C310.8 869.135 290.486 892.232 266.854 911.606V911.606C132.1 1022.08 129.271 1227.28 260.928 1341.42L281.505 1359.26C298.856 1374.31 314.447 1391.27 327.981 1409.82L491.5 1634" stroke="url(#paint4_linear_174_239)" stroke-dasharray="1 17"/>
+        <path id="x" d="M182.5 69L279.608 265.681C293.299 293.412 310.508 319.261 330.809 342.592V342.592C450.224 479.827 448.443 684.597 326.66 819.734L270.231 882.351V882.351C162.583 1022.03 158.946 1215.67 261.273 1359.29L277.385 1381.9L468.5 1638" stroke="url(#paint5_linear_174_239)" stroke-dasharray="1 17"/>
+        <defs>
+        <linearGradient id="paint0_linear_174_239" x1="294" y1="20" x2="294" y2="1580" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#7941F3"/>
+        <stop offset="1" stop-color="#5B22D6"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_174_239" x1="294" y1="20" x2="294" y2="1580" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#3A88FD"/>
+        <stop offset="1" stop-opacity="0.2"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_174_239" x1="293.749" y1="23.2905" x2="293.749" y2="1521.44" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity="0.2"/>
+        <stop offset="1" stop-color="#6FDFF7"/>
+        </linearGradient>
+        <linearGradient id="paint3_linear_174_239" x1="294" y1="20" x2="294" y2="1594" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#7941F3"/>
+        <stop offset="1" stop-color="#5B22D6"/>
+        </linearGradient>
+        <linearGradient id="paint4_linear_174_239" x1="294" y1="20" x2="294" y2="1594" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#3A88FD"/>
+        <stop offset="1" stop-opacity="0.2"/>
+        </linearGradient>
+        <linearGradient id="paint5_linear_174_239" x1="294" y1="20" x2="294" y2="1594" gradientUnits="userSpaceOnUse">
+        <stop stop-opacity="0.2"/>
+        <stop offset="1" stop-color="#6FDFF7"/>
+        </linearGradient>
+        </defs>
+      </svg>
+
+                            <div class="roadmap__info-card info-card-1" data-roadmap-card="1">
+                                <div class="info-card__text">
+                                    <h4 class="info-card__number" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                                        Q1
+                                    </h4>
+                                    <h4 class="info-card__heading" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                                        Governance Token <br> Launch ($CMETA)
+                                    </h4>
+                                    <ul class="custom-bullet">
+                                        <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">Launch Date (BSC): Jan 8th, 2022</li>
+                                        <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Contract Audit
+                                            <ul>
+                                                <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">TechAudit Completed on Jan 21st, 2022</li>
+                                            </ul>
+                                        </li>
+                                        <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">5k Telegram members</li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">CG and CMC listings
+                                            <ul>
+                                                <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">CMC listed</li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">CG Application Sent</li>
+                                            </ul>
+                                        </li>
+                                        <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">CEX Listings
+                                            <ul>
+                                                <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">CoinsBit Listing — Feb 8th</li>
+                                            </ul>
+                                        </li>
+                                        <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="350" data-aos-duration="500">Website Revamp</li>
+                                        <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Launch Date (ETH): Mar 19th, 2022</li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Bridge BSC and ETH Smart Contracts</li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">Game Preview Released
+                                            <ul>
+                                                <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Game Title and Features Revealed</li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Game Characters Released
+                                                    <ul>
+                                                        <li class="info-card__list-item-finished" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Alpha Nomoton Character Released</li>
+                                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">More Characters Incoming</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Game Demo Released</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info-card__circle info-card__circle-1">
+                                    <div class="circle circle__first" data-aos="pulsing">
+                                        <div class="c c1"></div>
+                                        <div class="c c2"></div>
+                                        <div class="c c3"></div>
+                                        <div class="c c4"></div>
+                                        <div class="c c5"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="roadmap__info-card info-card-2" data-roadmap-card="2">
+                                <div class="info-card__text">
+                                    <h4 class="info-card__number" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                                        Q2
+                                    </h4>
+                                    <h4 class="info-card__heading" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                                        CMETA Ecosystem Begins
+                                    </h4>
+                                    <ul class="custom-bullet">
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">CMETA Staking Release</li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">SANKOFA Sidechain DEV Starts ($KOFA)
+                                            <ul>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">CEX Listings and Marketing</li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">Governance Token Launch on SOL ($CMETA)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">Bridge BSC, ETH Smart Contracts to Solana Contract
+                                            <ul>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="350" data-aos-duration="500">Social Media Marketing Pushü</li>
+                                            </ul>
+                                        </li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">10K Telegram Members</li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="450" data-aos-duration="500">10K Twitter Followers</li>
+                                        <li class="info-card__list-item" style="display: none;" data-roadmap-hidden data-aos="fade-up" data-aos-delay="450" data-aos-duration="500">2K YouTube Subscribers
+                                            <ul>
+                                                <li class="info-card__list-item">Guardians of Lost Worlds Game Play Introduced</li>
+                                            </ul>
+                                        </li>
+                                        <li class="info-card__list-item" style="display: none;" data-roadmap-hidden data-aos="fade-up" data-aos-delay="450" data-aos-duration="500">
+                                            NFT Rare Gameplay Cards Revealed
+                                        </li>
+                                        <li class="info-card__list-item" style="display: none;" data-roadmap-hidden data-aos="fade-up" data-aos-delay="450" data-aos-duration="500">
+                                            NFT Rare Gameplay Cards In-Game Video Release
+                                        </li>
+                                        <li class="info-card__list-item" style="display: none;" data-roadmap-hidden data-aos="fade-up" data-aos-delay="450" data-aos-duration="500">
+                                            NFT Rare Gameplay Cards Minted
+                                        </li>
+                                        <li class="info-card__list-item" style="display: none;" data-roadmap-hidden data-aos="fade-up" data-aos-delay="450" data-aos-duration="500">
+                                            Video Game Play Beta Revealed on Twitch and YouTube
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info-card__circle info-card__circle-2">
+                                    <div class="circle circle__second" data-aos="pulsing">
+                                        <div class="c c1"></div>
+                                        <div class="c c2"></div>
+                                        <div class="c c3"></div>
+                                        <div class="c c4"></div>
+                                        <div class="c c5"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="roadmap__info-card info-card-3">
+                                <div class="info-card__text">
+                                    <h4 class="info-card__number" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                                        Q3
+                                    </h4>
+                                    <h4 class="info-card__heading" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                                        Guardians of Lost Worlds Released <br> to Public (PC)
+                                    </h4>
+                                    <ul class="custom-bullet">
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">Implement In-Game Staking ($KOFA Rewards)</li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">In-Game NFT Released
+                                            <ul>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">SANKOFA Sidechain on Test Net</li>
+                                            </ul>
+                                        </li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">Fiat On-Ramp Added
+                                            <ul>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">Gameplay Battle Mode Introduced</li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="350" data-aos-duration="500">Marketplace Introduced</li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">CEX Listings and Marketing</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info-card__circle info-card__circle-3">
+                                    <div class="circle circle__third" data-aos="pulsing">
+                                        <div class="c c1"></div>
+                                        <div class="c c2"></div>
+                                        <div class="c c3"></div>
+                                        <div class="c c4"></div>
+                                        <div class="c c5"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="roadmap__info-card info-card-4">
+                                <div class="info-card__text">
+                                    <h4 class="info-card__number" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                                        Q4
+                                    </h4>
+                                    <h4 class="info-card__heading" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+                                        SANKOFA Mainnet Launch
+                                    </h4>
+                                    <ul class="custom-bullet">
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500"> Migrate Guardians of Lost Worlds to SANKOFA Sidechain
+                                            <ul>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">CEX Listings & Marketing</li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Virtual Arts Studio Introduced</li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">Mobile Beta Gameplay Revealed</li>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">CMETA DEX Introduced: FORGE</li>
+                                            </ul>
+                                        </li>
+                                        <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="350" data-aos-duration="500">Multi-Network Implementation<br>
+                                            <ul>
+                                                <li class="info-card__list-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">VR Game Dev Begins</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info-card__circle info-card__circle-4">
+                                    <div class="circle circle__fourth" data-aos="pulsing">
+                                        <div class="c c1"></div>
+                                        <div class="c c2"></div>
+                                        <div class="c c3"></div>
+                                        <div class="c c4"></div>
+                                        <div class="c c5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="brands">
+                    <div class="brands__heading roadmap__heading" data-aos="fade-in">
+                        <h2 class="brands__main-title hero__main-title">
+                            Our brands
+                        </h2>
+                    </div>
+                    <div class="brands__card-wrapper">
+
+                        <div class="card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+
+                            <svg style="position: absolute; top: -8px; left: 45%;" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23 0L26.2527 19.7473L46 23L26.2527 26.2527L23 46L19.7473 26.2527L0 23L19.7473 19.7473L23 0Z" fill="white"/>
+        </svg>
+
+                            <div class="card__image">
+                                <img src="img/brands-card-1.png" alt="card-1">
+                            </div>
+                            <div class="card__text card__text-1">
+                                <div class="card__heading">
+                                    Guardians of Lost Worlds (P2E Game)
+                                </div>
+                                <div class="card__descr">
+                                    Crafty Metaverse will soon launch Guardians of Lost Worlds, the first cross-chain P2E gaming experience. Our game will be available on multiple blockchains and then eventually on our side chain (SANKOFA). This will give users a seamless gameplay experience
+                                    with little to no gas fees that allow users to focus on the game rather than worrying about losing their returns.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+
+                            <div class="card__image">
+                                <img src="img/brands-2-card.png" alt="card-2">
+                            </div>
+                            <div class="card__text card__text-2">
+                                <div class="card__heading">
+                                    Crafty Metaverse <br> Ecosystem
+                                </div>
+                                <div class="card__descr">
+                                    Crafty Metaverse presents a Virtual Arts Studio where you can enhance your creativity by creating digital arts inspired by your game. A virtual marketplace to allow the users to trade and stake our $CMETA token and their NFTs. Negotiate with the digital
+                                    avatars of other users to sell your NFTs at the best prices and generate passive income while playing
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+
+                            <div class="card__image">
+                                <img src="img/brands-card-3.png" alt="card-3">
+                            </div>
+                            <div class="card__text card__text-3">
+                                <div class="card__heading">
+                                    SANKOFA
+                                </div>
+                                <div class="card__descr">
+                                    SANKOFA ($KOFA) is an Ethereum sidechain that will be created with Guardians of Lost Worlds community in mind. LYQUID, the team behind Guardians of Lost Worlds, will build a reliable, fast and cheap network that could cater to the demands of the game.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="resources" id="tokenomics">
+
+                    <div class="resources__heading roadmap__heading" data-aos="fade-in">
+                        <!-- <h3 class="resources__title hero__title">
+      What we do
+    </h3> -->
+                        <h2 class="resources__main-title hero__main-title">
+                            Tokenomics
+                        </h2>
+                    </div>
+
+                    <div class="resources__container" data-aos="fade-up">
+                        <div class="resources__content hero__content">
+                            <img class="resources__logo" src="img/resources-logo.svg" alt="logo">
+                            <h3 class="resources__main-title about__main-title">
+                                About toKen $Cmeta
+                            </h3>
+                            <h1 class="resources__descr about__descr">
+                                CMETA, a multi-blockchain cryptocurrency token will be the sole governance token on the platform. This means that every single transaction in the Crafty Metaverse space will be conducted with the $CMETA token
+                            </h1>
+                            <div class="resources__controls">
+                                <a target="_blank" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x8FEe1E7C2e902C50F34E14fCfc2d8Dfd401e6579&chain=mainnet" class="resources__link resources__link_eth hero__link btn" data-scroll data-tokenomics-eth>
+          <img src="img/ethereum.svg" alt="svg">
+          <span>ETH Buy</span>
+        </a>
+                                <!-- <a href="#" class="resources__link resources__link_invest hero__link btn" data-scroll>
+          <span>Invest Now</span>
+        </a> -->
+                                <a target="_blank" href="https://pancakeswap.finance/swap?outputCurrency=0x5CD47AACCA739695cB6722C267FB59Dc63148eAc" class="resources__link resources__link_wbnb hero__link btn" data-scroll data-tokenomics-bnb>
+          <img src="img/WBNB.svg" alt="svg">
+          <span>BNB Buy</span>
+        </a>
+                            </div>
+
+                            <svg class="resources-star" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23 0L26.2527 19.7473L46 23L26.2527 26.2527L23 46L19.7473 26.2527L0 23L19.7473 19.7473L23 0Z" fill="white"/>
+      </svg>
+
+                        </div>
+
+                        <div class="resources__image-wrapper">
+
+                            <div class="info-block info-block-1">
+                                <div class="marker" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+                                    <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25.4692" cy="24.5" r="24" stroke="#9D71FF"/>
+            <circle cx="25.4692" cy="24.5" r="18" stroke="url(#paint0_linear_1_360)"/>
+            <circle cx="25.9692" cy="24" r="6" fill="#9D71FF"/>
+            <defs>
+            <linearGradient id="paint0_linear_1_360" x1="18.4692" y1="6" x2="25.4692" y2="43" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#9D71FF"/>
+            <stop offset="1" stop-color="#56FFEB" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+                                </div>
+                                <p class="description">Circulating Supply: 1,000,000,000</p>
+                            </div>
+
+                            <div class="info-block info-block-2">
+                                <div class="marker" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">
+                                    <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25.4692" cy="24.5" r="24" stroke="#FF4DE3"/>
+            <circle cx="25.4692" cy="24.5" r="18" stroke="url(#paint0_linear_1_366)"/>
+            <circle cx="25.9692" cy="24" r="6" fill="#FF4DE3"/>
+            <defs>
+            <linearGradient id="paint0_linear_1_366" x1="18.4692" y1="6" x2="25.4692" y2="43" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF4DE3"/>
+            <stop offset="1" stop-color="#FF4DE3" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+
+                                </div>
+                                <p class="description">Maximum supply: 1,000,000,000</p>
+                            </div>
+
+                            <div class="info-block info-block-3">
+                                <div class="marker" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
+                                    <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25.4692" cy="24.5" r="24" stroke="#FF388C"/>
+            <circle cx="25.4692" cy="24.5" r="18" stroke="url(#paint0_linear_1_372)"/>
+            <circle cx="25.9692" cy="24" r="6" fill="#FF388C"/>
+            <defs>
+            <linearGradient id="paint0_linear_1_372" x1="18.4692" y1="6" x2="25.4692" y2="43" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF388C"/>
+            <stop offset="1" stop-color="#FF388C" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+
+                                </div>
+                                <p class="description">
+                                    BNB<br/> Tax: 10% <br> Marketing: 5%<br> Development: 5%
+                                </p>
+                            </div>
+
+                            <div class="info-block info-block-4">
+                                <div class="marker" data-aos="fade-in" data-aos-delay="400" data-aos-duration="1000">
+                                    <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25.4688" cy="24.5" r="24" stroke="#56FFEB"/>
+            <circle cx="25.4691" cy="24.5" r="18" stroke="url(#paint0_linear_1_352)"/>
+            <ellipse cx="25.9686" cy="24" rx="6" ry="6" fill="#56FFEB"/>
+            <defs>
+            <linearGradient id="paint0_linear_1_352" x1="18.4691" y1="6" x2="25.4691" y2="43" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#56FFEB"/>
+            <stop offset="1" stop-color="#56FFEB" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+
+                                </div>
+                                <p class="description">Token symbol: $CMETA</p>
+                            </div>
+
+                            <div class="info-block info-block-5">
+                                <div class="marker" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
+                                    <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25.4692" cy="24.5" r="24" stroke="#FF388C"/>
+            <circle cx="25.4692" cy="24.5" r="18" stroke="url(#paint0_linear_1_372)"/>
+            <circle cx="25.9692" cy="24" r="6" fill="#FF388C"/>
+            <defs>
+            <linearGradient id="paint0_linear_1_372" x1="18.4692" y1="6" x2="25.4692" y2="43" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF388C"/>
+            <stop offset="1" stop-color="#FF388C" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+
+                                </div>
+                                <p class="description">
+                                    ETH<br/> Tax: 15% <br> Marketing/Dev: 15%<br> Auto-LP: 3%<br> Reflections: 2%
+                                </p>
+                            </div>
+
+                            <img class="resources__image" src="img/resources-img.png" alt="image">
+                        </div>
+                    </div>
+
+                </section>
+                <section class="game">
+
+                    <div class="marquee">
+                        <div class="marquee__inner" aria-hidden="true">
+                            <span>VR GAME MARKETPLACE</span>
+                            <span>VR GAME MARKETPLACE</span>
+                            <span>VR GAME MARKETPLACE</span>
+                            <span>VR GAME MARKETPLACE</span>
+                        </div>
+                    </div>
+
+                    <div class="marquee marquee-2">
+                        <div class="marquee__inner marquee__inner-2" aria-hidden="true">
+                            <span>CRAFTY METAVERSE   ✦   CRAFTY METAVERSE   ✦</span>
+                            <span>CRAFTY METAVERSE   ✦   CRAFTY METAVERSE   ✦</span>
+                            <span>CRAFTY METAVERSE   ✦   CRAFTY METAVERSE   ✦</span>
+                            <span>CRAFTY METAVERSE   ✦   CRAFTY METAVERSE   ✦</span>
+                        </div>
+                    </div>
+
+                    <div class="game__container">
+                        <div class="game-flex-wrapper">
+
+                            <div class="game__info">
+                                <!--   -->
+
+                                <div class="img-container img-container-woman">
+                                    <img src="img/woman.png" alt="woman" class="game__image game__image-woman" data-aos="move-left" data-aos-offset="350">
+                                    <!-- <img src="img/woman.png" alt="woman" class="game__image game__image-woman"  -->
+                                </div>
+
+                                <div class="game-info-content" data-aos="move-up" data-aos-delay="500" data-aos-offset="300">
+                                    <svg class="info-star" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23 0L26.2527 19.7473L46 23L26.2527 26.2527L23 46L19.7473 26.2527L0 23L19.7473 19.7473L23 0Z" fill="white"/>
+          </svg>
+
+                                    <img src="img/guardians.png" alt="guardians icon" class="game__icon">
+
+                                    <div class="text-block">
+                                        <p class="game__descr about__descr">
+                                            The space will also offer avid gamers to be a part of an <br> amazing 3D gaming experience (details to be published soon).
+                                        </p>
+                                        <p class="game__descr about__descr">
+                                            Crafty Metaverse space will continuously evolve its 3D gaming space to include technologies such as VR headsets, augmented reality glasses, and game consoles.
+                                        </p>
+                                        <a href="#" class="game__link hero__link btn-disabled btn" data-scroll>Play Now (Coming Soon)</a>
+                                    </div>
+                                </div>
+
+                                <div class="img-container img-container-man">
+                                    <img src="img/man.png" alt="man" class="game__image game__image-man" data-aos="move-right" data-aos-offset="350">
+                                    <!-- <img src="img/man.png" alt="man" class="game__image game__image-man" > -->
+                                </div>
+
+                            </div>
+
+                            <div class="game-mobile__personajes">
+                                <img src="img/woman.png" alt="woman" class="game-mobile__pers">
+                                <div class="game-mobile__pers-wrapper">
+                                    <img src="img/man.png" alt="man" class="game-mobile__pers">
+                                    <img src="img/game-round.png" alt="round" class="game-mobile__round">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="marketplace">
+                    <div class="marketplace__container">
+                        <div class="wrapper">
+                            <div class="marketplace-wrapper marketplace-wrapper-1" data-aos="fade-up" data-aos-offset="200">
+
+                                <svg style="position: absolute; bottom: -24px; left: 427px;" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23 0L26.2527 19.7473L46 23L26.2527 26.2527L23 46L19.7473 26.2527L0 23L19.7473 19.7473L23 0Z" fill="white"/>
+        </svg>
+
+                                <div class="marketplace__heading">
+                                    <h4 class="marketplace__main-title">virtual marketplace</h4>
+
+                                    <a href="#" class="marketplace__link hero__link btn-disabled btn" data-scroll>Explore Now (Coming Soon)</a>
+
+                                </div>
+                                <div class="marketplace__text">
+                                    <p class="marketplace__descr">
+                                        A virtual marketplace to allow the users to trade and stake our $CMETA token and their NFTs. Negotiate with the digital avatars of other users to sell your NFTs at the best prices and generate passive income while playing.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="marketplace-composition">
+
+                                <img src="img/marketplace-image.png" alt="window" class="main-image">
+
+                                <div class="composition">
+                                    <img src="img/chain.png" alt="chain" class="chain" data-aos="boom-5" data-aos-delay="250" data-aos-offset="10">
+                                    <img src="img/cash.png" alt="cash" class="cash" data-aos="boom-4" data-aos-delay="200" data-aos-offset="10">
+                                    <img src="img/landscape.png" alt="landscape" class="landscape" data-aos="boom-2" data-aos-delay="150" data-aos-offset="10">
+                                    <img src="img/portrait.png" alt="portrait" class="portrait" data-aos="boom-1" data-aos-delay="100" data-aos-offset="10">
+                                    <img src="img/antiq.png" alt="antiq" class="antiq" data-aos="boom-3" data-aos-delay="50" data-aos-offset="10">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="marketplace-wrapper marketplace-wrapper-2" data-aos="fade-up" data-aos-offset="200">
+
+                            <svg class="marketplace-star" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23 0L26.2527 19.7473L46 23L26.2527 26.2527L23 46L19.7473 26.2527L0 23L19.7473 19.7473L23 0Z" fill="white"/>
+      </svg>
+
+                            <div class="marketplace__heading marketplace__heading-2">
+                                <h4 class="marketplace__main-title marketplace__main-title-2">Virtual Arts Studio</h4>
+
+                                <a href="#" class="marketplace__link marketplace__link-2 hero__link btn" data-scroll>Create Now</a>
+
+                            </div>
+                            <div class="marketplace__text">
+                                <p class="marketplace__descr">
+                                    Virtual Arts Studio where you can enhance your creativity by creating digital arts inspired by your game
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <img class="marketplace__vrman-bg" src="img/vrman.png" alt="vrman">
+
+                </section>
+                <section class="team">
+
+                    <div class="team__heading roadmap__heading" data-aos="fade-in">
+                        <h3 class="team__title hero__title">
+                            WHO WE ARE
+                        </h3>
+                        <h2 class="team__main-title hero__main-title">
+                            Our Team
+                        </h2>
+                    </div>
+
+                    <div class="team__container">
+
+                        <div class="team-item team-item_up" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                            <div class="team-item__wrapper">
+
+                                <div class="team-item__social">
+                                    <a href="#facebook" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0933 9.93723C20.0933 4.57971 15.7099 0.196289 10.3524 0.196289C4.99487 0.196289 0.61145 4.57971 0.61145 9.93723C0.61145 14.8077 4.14254 18.8258 8.76949 19.5564V12.7378H6.33425V9.93723H8.76949V7.74552C8.76949 5.31028 10.2306 3.97091 12.4223 3.97091C13.5182 3.97091 14.6141 4.21443 14.6141 4.21443V6.64966H13.3964C12.1788 6.64966 11.8135 7.38024 11.8135 8.11081V9.93723H14.4923L14.0052 12.7378H11.6918V19.6782C16.5622 18.9476 20.0933 14.8077 20.0933 9.93723Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="https://twitter.com/KojoBoa76247412" target="_blank" class="team-item__social-link">
+            <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.41 2.26417C19.6794 2.62946 18.9488 2.75122 18.0965 2.87298C18.9488 2.38593 19.5577 1.65536 19.8012 0.681268C19.0706 1.16831 18.2183 1.41184 17.2442 1.65536C16.5136 0.924791 15.4178 0.437744 14.3219 0.437744C11.7649 0.437744 9.81671 2.87298 10.4255 5.30822C7.13795 5.18646 4.21567 3.60355 2.14572 1.16832C1.04986 2.99474 1.65867 5.30822 3.36334 6.52584C2.75453 6.52584 2.14572 6.28231 1.53691 6.03879C1.53691 7.86522 2.87629 9.56988 4.70272 10.0569C4.09391 10.1787 3.4851 10.3005 2.87629 10.1787C3.36334 11.7616 4.82448 12.9792 6.65091 12.9792C5.18976 14.0751 2.99805 14.6839 0.928101 14.4404C2.75453 15.5362 4.82448 16.2668 7.01619 16.2668C14.4437 16.2668 18.5836 10.0569 18.34 4.33412C19.1924 3.84707 19.9229 3.1165 20.41 2.26417Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#instagram" target="_blank" class="team-item__social-link deactivate">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9848 2.65773C13.6635 2.65773 14.0288 2.65773 15.1247 2.65773C16.0988 2.65773 16.5858 2.90125 16.9511 3.02301C17.4381 3.26654 17.8034 3.3883 18.1687 3.75358C18.534 4.11887 18.7775 4.48415 18.8993 4.9712C19.021 5.33649 19.1428 5.82353 19.2646 6.79763C19.2646 7.89348 19.2646 8.13701 19.2646 10.9375C19.2646 13.7381 19.2646 13.9816 19.2646 15.0774C19.2646 16.0515 19.021 16.5386 18.8993 16.9039C18.6558 17.3909 18.534 17.7562 18.1687 18.1215C17.8034 18.4868 17.4381 18.7303 16.9511 18.852C16.5858 18.9738 16.0988 19.0956 15.1247 19.2173C14.0288 19.2173 13.7853 19.2173 10.9848 19.2173C8.18425 19.2173 7.94073 19.2173 6.84487 19.2173C5.87077 19.2173 5.38373 18.9738 5.01844 18.852C4.53139 18.6085 4.16611 18.4868 3.80082 18.1215C3.43554 17.7562 3.19201 17.3909 3.07025 16.9039C2.94849 16.5386 2.82673 16.0515 2.70497 15.0774C2.70497 13.9816 2.70497 13.7381 2.70497 10.9375C2.70497 8.13701 2.70497 7.89348 2.70497 6.79763C2.70497 5.82353 2.94849 5.33649 3.07025 4.9712C3.31378 4.48415 3.43554 4.11887 3.80082 3.75358C4.16611 3.3883 4.53139 3.14477 5.01844 3.02301C5.38373 2.90125 5.87077 2.77949 6.84487 2.65773C7.94073 2.65773 8.30601 2.65773 10.9848 2.65773ZM10.9848 0.831299C8.18425 0.831299 7.94073 0.831299 6.84487 0.831299C5.74901 0.831299 5.01844 1.07482 4.40963 1.31835C3.80082 1.56187 3.19201 1.92716 2.58321 2.53596C1.9744 3.14477 1.73087 3.63182 1.36559 4.36239C1.12206 4.9712 1.0003 5.70177 0.87854 6.79763C0.87854 7.89348 0.87854 8.25877 0.87854 10.9375C0.87854 13.7381 0.87854 13.9816 0.87854 15.0774C0.87854 16.1733 1.12206 16.9039 1.36559 17.5127C1.60911 18.1215 1.9744 18.7303 2.58321 19.3391C3.19201 19.9479 3.67906 20.1914 4.40963 20.5567C5.01844 20.8002 5.74901 20.922 6.84487 21.0438C7.94073 21.0438 8.30601 21.0438 10.9848 21.0438C13.6635 21.0438 14.0288 21.0438 15.1247 21.0438C16.2205 21.0438 16.9511 20.8002 17.5599 20.5567C18.1687 20.3132 18.7775 19.9479 19.3863 19.3391C19.9951 18.7303 20.2387 18.2432 20.604 17.5127C20.8475 16.9039 20.9692 16.1733 21.091 15.0774C21.091 13.9816 21.091 13.6163 21.091 10.9375C21.091 8.25877 21.091 7.89348 21.091 6.79763C21.091 5.70177 20.8475 4.9712 20.604 4.36239C20.3604 3.75358 19.9951 3.14477 19.3863 2.53596C18.7775 1.92716 18.2905 1.68363 17.5599 1.31835C16.9511 1.07482 16.2205 0.953061 15.1247 0.831299C14.0288 0.831299 13.7853 0.831299 10.9848 0.831299Z" fill="white"/>
+              <path d="M10.9848 5.70177C8.06249 5.70177 5.74901 8.01525 5.74901 10.9375C5.74901 13.8598 8.06249 16.1733 10.9848 16.1733C13.9071 16.1733 16.2205 13.8598 16.2205 10.9375C16.2205 8.01525 13.9071 5.70177 10.9848 5.70177ZM10.9848 14.3469C9.15834 14.3469 7.57544 12.8857 7.57544 10.9375C7.57544 9.1111 9.03658 7.5282 10.9848 7.5282C12.8112 7.5282 14.3941 8.98934 14.3941 10.9375C14.3941 12.764 12.8112 14.3469 10.9848 14.3469Z" fill="white"/>
+              <path d="M16.3423 6.79763C17.0148 6.79763 17.5599 6.25248 17.5599 5.58001C17.5599 4.90754 17.0148 4.36239 16.3423 4.36239C15.6698 4.36239 15.1247 4.90754 15.1247 5.58001C15.1247 6.25248 15.6698 6.79763 16.3423 6.79763Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#linkedin" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.29005 19.6782H1.15014V6.64966H5.29005V19.6782ZM3.22009 4.82324C1.88071 4.82324 0.906616 3.84914 0.906616 2.50976C0.906616 1.17038 2.00247 0.196289 3.22009 0.196289C4.55947 0.196289 5.53357 1.17038 5.53357 2.50976C5.53357 3.84914 4.55947 4.82324 3.22009 4.82324ZM20.3885 19.6782H16.2486V12.616C16.2486 10.546 15.3963 9.93723 14.1786 9.93723C12.961 9.93723 11.7434 10.9113 11.7434 12.7378V19.6782H7.60352V6.64966H11.4999V8.47609C11.8652 7.62376 13.3263 6.28438 15.3963 6.28438C17.7097 6.28438 20.145 7.62376 20.145 11.6419V19.6782H20.3885Z" fill="white"/>
+            </svg>
+          </a>
+                                </div>
+
+                                <div class="team-item__info">
+                                    <span class="team-item__prof">Co-Founder/CEO</span>
+                                    <h3 class="team-item__name clr-cyan">Kojo Boateng</h3>
+                                </div>
+
+                                <div class="team-item__image">
+                                    <img src="img/team-01.png" alt="avatar">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="team-item team-item_up" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <div class="team-item__wrapper">
+
+                                <div class="team-item__social">
+                                    <a href="#facebook" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0933 9.93723C20.0933 4.57971 15.7099 0.196289 10.3524 0.196289C4.99487 0.196289 0.61145 4.57971 0.61145 9.93723C0.61145 14.8077 4.14254 18.8258 8.76949 19.5564V12.7378H6.33425V9.93723H8.76949V7.74552C8.76949 5.31028 10.2306 3.97091 12.4223 3.97091C13.5182 3.97091 14.6141 4.21443 14.6141 4.21443V6.64966H13.3964C12.1788 6.64966 11.8135 7.38024 11.8135 8.11081V9.93723H14.4923L14.0052 12.7378H11.6918V19.6782C16.5622 18.9476 20.0933 14.8077 20.0933 9.93723Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="https://twitter.com/cryptoseer7" target="_blank" class="team-item__social-link">
+            <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.41 2.26417C19.6794 2.62946 18.9488 2.75122 18.0965 2.87298C18.9488 2.38593 19.5577 1.65536 19.8012 0.681268C19.0706 1.16831 18.2183 1.41184 17.2442 1.65536C16.5136 0.924791 15.4178 0.437744 14.3219 0.437744C11.7649 0.437744 9.81671 2.87298 10.4255 5.30822C7.13795 5.18646 4.21567 3.60355 2.14572 1.16832C1.04986 2.99474 1.65867 5.30822 3.36334 6.52584C2.75453 6.52584 2.14572 6.28231 1.53691 6.03879C1.53691 7.86522 2.87629 9.56988 4.70272 10.0569C4.09391 10.1787 3.4851 10.3005 2.87629 10.1787C3.36334 11.7616 4.82448 12.9792 6.65091 12.9792C5.18976 14.0751 2.99805 14.6839 0.928101 14.4404C2.75453 15.5362 4.82448 16.2668 7.01619 16.2668C14.4437 16.2668 18.5836 10.0569 18.34 4.33412C19.1924 3.84707 19.9229 3.1165 20.41 2.26417Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#instagram" target="_blank" class="team-item__social-link deactivate">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9848 2.65773C13.6635 2.65773 14.0288 2.65773 15.1247 2.65773C16.0988 2.65773 16.5858 2.90125 16.9511 3.02301C17.4381 3.26654 17.8034 3.3883 18.1687 3.75358C18.534 4.11887 18.7775 4.48415 18.8993 4.9712C19.021 5.33649 19.1428 5.82353 19.2646 6.79763C19.2646 7.89348 19.2646 8.13701 19.2646 10.9375C19.2646 13.7381 19.2646 13.9816 19.2646 15.0774C19.2646 16.0515 19.021 16.5386 18.8993 16.9039C18.6558 17.3909 18.534 17.7562 18.1687 18.1215C17.8034 18.4868 17.4381 18.7303 16.9511 18.852C16.5858 18.9738 16.0988 19.0956 15.1247 19.2173C14.0288 19.2173 13.7853 19.2173 10.9848 19.2173C8.18425 19.2173 7.94073 19.2173 6.84487 19.2173C5.87077 19.2173 5.38373 18.9738 5.01844 18.852C4.53139 18.6085 4.16611 18.4868 3.80082 18.1215C3.43554 17.7562 3.19201 17.3909 3.07025 16.9039C2.94849 16.5386 2.82673 16.0515 2.70497 15.0774C2.70497 13.9816 2.70497 13.7381 2.70497 10.9375C2.70497 8.13701 2.70497 7.89348 2.70497 6.79763C2.70497 5.82353 2.94849 5.33649 3.07025 4.9712C3.31378 4.48415 3.43554 4.11887 3.80082 3.75358C4.16611 3.3883 4.53139 3.14477 5.01844 3.02301C5.38373 2.90125 5.87077 2.77949 6.84487 2.65773C7.94073 2.65773 8.30601 2.65773 10.9848 2.65773ZM10.9848 0.831299C8.18425 0.831299 7.94073 0.831299 6.84487 0.831299C5.74901 0.831299 5.01844 1.07482 4.40963 1.31835C3.80082 1.56187 3.19201 1.92716 2.58321 2.53596C1.9744 3.14477 1.73087 3.63182 1.36559 4.36239C1.12206 4.9712 1.0003 5.70177 0.87854 6.79763C0.87854 7.89348 0.87854 8.25877 0.87854 10.9375C0.87854 13.7381 0.87854 13.9816 0.87854 15.0774C0.87854 16.1733 1.12206 16.9039 1.36559 17.5127C1.60911 18.1215 1.9744 18.7303 2.58321 19.3391C3.19201 19.9479 3.67906 20.1914 4.40963 20.5567C5.01844 20.8002 5.74901 20.922 6.84487 21.0438C7.94073 21.0438 8.30601 21.0438 10.9848 21.0438C13.6635 21.0438 14.0288 21.0438 15.1247 21.0438C16.2205 21.0438 16.9511 20.8002 17.5599 20.5567C18.1687 20.3132 18.7775 19.9479 19.3863 19.3391C19.9951 18.7303 20.2387 18.2432 20.604 17.5127C20.8475 16.9039 20.9692 16.1733 21.091 15.0774C21.091 13.9816 21.091 13.6163 21.091 10.9375C21.091 8.25877 21.091 7.89348 21.091 6.79763C21.091 5.70177 20.8475 4.9712 20.604 4.36239C20.3604 3.75358 19.9951 3.14477 19.3863 2.53596C18.7775 1.92716 18.2905 1.68363 17.5599 1.31835C16.9511 1.07482 16.2205 0.953061 15.1247 0.831299C14.0288 0.831299 13.7853 0.831299 10.9848 0.831299Z" fill="white"/>
+              <path d="M10.9848 5.70177C8.06249 5.70177 5.74901 8.01525 5.74901 10.9375C5.74901 13.8598 8.06249 16.1733 10.9848 16.1733C13.9071 16.1733 16.2205 13.8598 16.2205 10.9375C16.2205 8.01525 13.9071 5.70177 10.9848 5.70177ZM10.9848 14.3469C9.15834 14.3469 7.57544 12.8857 7.57544 10.9375C7.57544 9.1111 9.03658 7.5282 10.9848 7.5282C12.8112 7.5282 14.3941 8.98934 14.3941 10.9375C14.3941 12.764 12.8112 14.3469 10.9848 14.3469Z" fill="white"/>
+              <path d="M16.3423 6.79763C17.0148 6.79763 17.5599 6.25248 17.5599 5.58001C17.5599 4.90754 17.0148 4.36239 16.3423 4.36239C15.6698 4.36239 15.1247 4.90754 15.1247 5.58001C15.1247 6.25248 15.6698 6.79763 16.3423 6.79763Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#linkedin" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.29005 19.6782H1.15014V6.64966H5.29005V19.6782ZM3.22009 4.82324C1.88071 4.82324 0.906616 3.84914 0.906616 2.50976C0.906616 1.17038 2.00247 0.196289 3.22009 0.196289C4.55947 0.196289 5.53357 1.17038 5.53357 2.50976C5.53357 3.84914 4.55947 4.82324 3.22009 4.82324ZM20.3885 19.6782H16.2486V12.616C16.2486 10.546 15.3963 9.93723 14.1786 9.93723C12.961 9.93723 11.7434 10.9113 11.7434 12.7378V19.6782H7.60352V6.64966H11.4999V8.47609C11.8652 7.62376 13.3263 6.28438 15.3963 6.28438C17.7097 6.28438 20.145 7.62376 20.145 11.6419V19.6782H20.3885Z" fill="white"/>
+            </svg>
+          </a>
+                                </div>
+
+                                <div class="team-item__info">
+                                    <span class="team-item__prof">Co-Founder/COO</span>
+                                    <h3 class="team-item__name clr-blue">Kwame Basoah</h3>
+                                </div>
+
+                                <div class="team-item__image">
+                                    <img src="img/team-02.png" alt="avatar">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="team-item team-item_up" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                            <div class="team-item__wrapper">
+
+                                <div class="team-item__social">
+                                    <a href="#facebook" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0933 9.93723C20.0933 4.57971 15.7099 0.196289 10.3524 0.196289C4.99487 0.196289 0.61145 4.57971 0.61145 9.93723C0.61145 14.8077 4.14254 18.8258 8.76949 19.5564V12.7378H6.33425V9.93723H8.76949V7.74552C8.76949 5.31028 10.2306 3.97091 12.4223 3.97091C13.5182 3.97091 14.6141 4.21443 14.6141 4.21443V6.64966H13.3964C12.1788 6.64966 11.8135 7.38024 11.8135 8.11081V9.93723H14.4923L14.0052 12.7378H11.6918V19.6782C16.5622 18.9476 20.0933 14.8077 20.0933 9.93723Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="https://twitter.com/KwasiBo93718713" target="_blank" class="team-item__social-link">
+            <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.41 2.26417C19.6794 2.62946 18.9488 2.75122 18.0965 2.87298C18.9488 2.38593 19.5577 1.65536 19.8012 0.681268C19.0706 1.16831 18.2183 1.41184 17.2442 1.65536C16.5136 0.924791 15.4178 0.437744 14.3219 0.437744C11.7649 0.437744 9.81671 2.87298 10.4255 5.30822C7.13795 5.18646 4.21567 3.60355 2.14572 1.16832C1.04986 2.99474 1.65867 5.30822 3.36334 6.52584C2.75453 6.52584 2.14572 6.28231 1.53691 6.03879C1.53691 7.86522 2.87629 9.56988 4.70272 10.0569C4.09391 10.1787 3.4851 10.3005 2.87629 10.1787C3.36334 11.7616 4.82448 12.9792 6.65091 12.9792C5.18976 14.0751 2.99805 14.6839 0.928101 14.4404C2.75453 15.5362 4.82448 16.2668 7.01619 16.2668C14.4437 16.2668 18.5836 10.0569 18.34 4.33412C19.1924 3.84707 19.9229 3.1165 20.41 2.26417Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#instagram" target="_blank" class="team-item__social-link deactivate">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9848 2.65773C13.6635 2.65773 14.0288 2.65773 15.1247 2.65773C16.0988 2.65773 16.5858 2.90125 16.9511 3.02301C17.4381 3.26654 17.8034 3.3883 18.1687 3.75358C18.534 4.11887 18.7775 4.48415 18.8993 4.9712C19.021 5.33649 19.1428 5.82353 19.2646 6.79763C19.2646 7.89348 19.2646 8.13701 19.2646 10.9375C19.2646 13.7381 19.2646 13.9816 19.2646 15.0774C19.2646 16.0515 19.021 16.5386 18.8993 16.9039C18.6558 17.3909 18.534 17.7562 18.1687 18.1215C17.8034 18.4868 17.4381 18.7303 16.9511 18.852C16.5858 18.9738 16.0988 19.0956 15.1247 19.2173C14.0288 19.2173 13.7853 19.2173 10.9848 19.2173C8.18425 19.2173 7.94073 19.2173 6.84487 19.2173C5.87077 19.2173 5.38373 18.9738 5.01844 18.852C4.53139 18.6085 4.16611 18.4868 3.80082 18.1215C3.43554 17.7562 3.19201 17.3909 3.07025 16.9039C2.94849 16.5386 2.82673 16.0515 2.70497 15.0774C2.70497 13.9816 2.70497 13.7381 2.70497 10.9375C2.70497 8.13701 2.70497 7.89348 2.70497 6.79763C2.70497 5.82353 2.94849 5.33649 3.07025 4.9712C3.31378 4.48415 3.43554 4.11887 3.80082 3.75358C4.16611 3.3883 4.53139 3.14477 5.01844 3.02301C5.38373 2.90125 5.87077 2.77949 6.84487 2.65773C7.94073 2.65773 8.30601 2.65773 10.9848 2.65773ZM10.9848 0.831299C8.18425 0.831299 7.94073 0.831299 6.84487 0.831299C5.74901 0.831299 5.01844 1.07482 4.40963 1.31835C3.80082 1.56187 3.19201 1.92716 2.58321 2.53596C1.9744 3.14477 1.73087 3.63182 1.36559 4.36239C1.12206 4.9712 1.0003 5.70177 0.87854 6.79763C0.87854 7.89348 0.87854 8.25877 0.87854 10.9375C0.87854 13.7381 0.87854 13.9816 0.87854 15.0774C0.87854 16.1733 1.12206 16.9039 1.36559 17.5127C1.60911 18.1215 1.9744 18.7303 2.58321 19.3391C3.19201 19.9479 3.67906 20.1914 4.40963 20.5567C5.01844 20.8002 5.74901 20.922 6.84487 21.0438C7.94073 21.0438 8.30601 21.0438 10.9848 21.0438C13.6635 21.0438 14.0288 21.0438 15.1247 21.0438C16.2205 21.0438 16.9511 20.8002 17.5599 20.5567C18.1687 20.3132 18.7775 19.9479 19.3863 19.3391C19.9951 18.7303 20.2387 18.2432 20.604 17.5127C20.8475 16.9039 20.9692 16.1733 21.091 15.0774C21.091 13.9816 21.091 13.6163 21.091 10.9375C21.091 8.25877 21.091 7.89348 21.091 6.79763C21.091 5.70177 20.8475 4.9712 20.604 4.36239C20.3604 3.75358 19.9951 3.14477 19.3863 2.53596C18.7775 1.92716 18.2905 1.68363 17.5599 1.31835C16.9511 1.07482 16.2205 0.953061 15.1247 0.831299C14.0288 0.831299 13.7853 0.831299 10.9848 0.831299Z" fill="white"/>
+              <path d="M10.9848 5.70177C8.06249 5.70177 5.74901 8.01525 5.74901 10.9375C5.74901 13.8598 8.06249 16.1733 10.9848 16.1733C13.9071 16.1733 16.2205 13.8598 16.2205 10.9375C16.2205 8.01525 13.9071 5.70177 10.9848 5.70177ZM10.9848 14.3469C9.15834 14.3469 7.57544 12.8857 7.57544 10.9375C7.57544 9.1111 9.03658 7.5282 10.9848 7.5282C12.8112 7.5282 14.3941 8.98934 14.3941 10.9375C14.3941 12.764 12.8112 14.3469 10.9848 14.3469Z" fill="white"/>
+              <path d="M16.3423 6.79763C17.0148 6.79763 17.5599 6.25248 17.5599 5.58001C17.5599 4.90754 17.0148 4.36239 16.3423 4.36239C15.6698 4.36239 15.1247 4.90754 15.1247 5.58001C15.1247 6.25248 15.6698 6.79763 16.3423 6.79763Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="https://www.linkedin.com/mwlite/in/kwasi-boateng-a2a3b423" target="_blank" class="team-item__social-link">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.29005 19.6782H1.15014V6.64966H5.29005V19.6782ZM3.22009 4.82324C1.88071 4.82324 0.906616 3.84914 0.906616 2.50976C0.906616 1.17038 2.00247 0.196289 3.22009 0.196289C4.55947 0.196289 5.53357 1.17038 5.53357 2.50976C5.53357 3.84914 4.55947 4.82324 3.22009 4.82324ZM20.3885 19.6782H16.2486V12.616C16.2486 10.546 15.3963 9.93723 14.1786 9.93723C12.961 9.93723 11.7434 10.9113 11.7434 12.7378V19.6782H7.60352V6.64966H11.4999V8.47609C11.8652 7.62376 13.3263 6.28438 15.3963 6.28438C17.7097 6.28438 20.145 7.62376 20.145 11.6419V19.6782H20.3885Z" fill="white"/>
+            </svg>
+          </a>
+                                </div>
+
+                                <div class="team-item__info">
+                                    <span class="team-item__prof">Co-Founder/CFO</span>
+                                    <h3 class="team-item__name clr-violet">Kwasi Boateng</h3>
+                                </div>
+
+                                <div class="team-item__image">
+                                    <img src="img/team-03.png" alt="avatar">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="team-item team-item_up" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <div class="team-item__wrapper">
+
+                                <div class="team-item__social">
+                                    <a href="#facebook" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0933 9.93723C20.0933 4.57971 15.7099 0.196289 10.3524 0.196289C4.99487 0.196289 0.61145 4.57971 0.61145 9.93723C0.61145 14.8077 4.14254 18.8258 8.76949 19.5564V12.7378H6.33425V9.93723H8.76949V7.74552C8.76949 5.31028 10.2306 3.97091 12.4223 3.97091C13.5182 3.97091 14.6141 4.21443 14.6141 4.21443V6.64966H13.3964C12.1788 6.64966 11.8135 7.38024 11.8135 8.11081V9.93723H14.4923L14.0052 12.7378H11.6918V19.6782C16.5622 18.9476 20.0933 14.8077 20.0933 9.93723Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="https://twitter.com/swatts404" target="_blank" class="team-item__social-link">
+            <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.41 2.26417C19.6794 2.62946 18.9488 2.75122 18.0965 2.87298C18.9488 2.38593 19.5577 1.65536 19.8012 0.681268C19.0706 1.16831 18.2183 1.41184 17.2442 1.65536C16.5136 0.924791 15.4178 0.437744 14.3219 0.437744C11.7649 0.437744 9.81671 2.87298 10.4255 5.30822C7.13795 5.18646 4.21567 3.60355 2.14572 1.16832C1.04986 2.99474 1.65867 5.30822 3.36334 6.52584C2.75453 6.52584 2.14572 6.28231 1.53691 6.03879C1.53691 7.86522 2.87629 9.56988 4.70272 10.0569C4.09391 10.1787 3.4851 10.3005 2.87629 10.1787C3.36334 11.7616 4.82448 12.9792 6.65091 12.9792C5.18976 14.0751 2.99805 14.6839 0.928101 14.4404C2.75453 15.5362 4.82448 16.2668 7.01619 16.2668C14.4437 16.2668 18.5836 10.0569 18.34 4.33412C19.1924 3.84707 19.9229 3.1165 20.41 2.26417Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#instagram" target="_blank" class="team-item__social-link deactivate">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9848 2.65773C13.6635 2.65773 14.0288 2.65773 15.1247 2.65773C16.0988 2.65773 16.5858 2.90125 16.9511 3.02301C17.4381 3.26654 17.8034 3.3883 18.1687 3.75358C18.534 4.11887 18.7775 4.48415 18.8993 4.9712C19.021 5.33649 19.1428 5.82353 19.2646 6.79763C19.2646 7.89348 19.2646 8.13701 19.2646 10.9375C19.2646 13.7381 19.2646 13.9816 19.2646 15.0774C19.2646 16.0515 19.021 16.5386 18.8993 16.9039C18.6558 17.3909 18.534 17.7562 18.1687 18.1215C17.8034 18.4868 17.4381 18.7303 16.9511 18.852C16.5858 18.9738 16.0988 19.0956 15.1247 19.2173C14.0288 19.2173 13.7853 19.2173 10.9848 19.2173C8.18425 19.2173 7.94073 19.2173 6.84487 19.2173C5.87077 19.2173 5.38373 18.9738 5.01844 18.852C4.53139 18.6085 4.16611 18.4868 3.80082 18.1215C3.43554 17.7562 3.19201 17.3909 3.07025 16.9039C2.94849 16.5386 2.82673 16.0515 2.70497 15.0774C2.70497 13.9816 2.70497 13.7381 2.70497 10.9375C2.70497 8.13701 2.70497 7.89348 2.70497 6.79763C2.70497 5.82353 2.94849 5.33649 3.07025 4.9712C3.31378 4.48415 3.43554 4.11887 3.80082 3.75358C4.16611 3.3883 4.53139 3.14477 5.01844 3.02301C5.38373 2.90125 5.87077 2.77949 6.84487 2.65773C7.94073 2.65773 8.30601 2.65773 10.9848 2.65773ZM10.9848 0.831299C8.18425 0.831299 7.94073 0.831299 6.84487 0.831299C5.74901 0.831299 5.01844 1.07482 4.40963 1.31835C3.80082 1.56187 3.19201 1.92716 2.58321 2.53596C1.9744 3.14477 1.73087 3.63182 1.36559 4.36239C1.12206 4.9712 1.0003 5.70177 0.87854 6.79763C0.87854 7.89348 0.87854 8.25877 0.87854 10.9375C0.87854 13.7381 0.87854 13.9816 0.87854 15.0774C0.87854 16.1733 1.12206 16.9039 1.36559 17.5127C1.60911 18.1215 1.9744 18.7303 2.58321 19.3391C3.19201 19.9479 3.67906 20.1914 4.40963 20.5567C5.01844 20.8002 5.74901 20.922 6.84487 21.0438C7.94073 21.0438 8.30601 21.0438 10.9848 21.0438C13.6635 21.0438 14.0288 21.0438 15.1247 21.0438C16.2205 21.0438 16.9511 20.8002 17.5599 20.5567C18.1687 20.3132 18.7775 19.9479 19.3863 19.3391C19.9951 18.7303 20.2387 18.2432 20.604 17.5127C20.8475 16.9039 20.9692 16.1733 21.091 15.0774C21.091 13.9816 21.091 13.6163 21.091 10.9375C21.091 8.25877 21.091 7.89348 21.091 6.79763C21.091 5.70177 20.8475 4.9712 20.604 4.36239C20.3604 3.75358 19.9951 3.14477 19.3863 2.53596C18.7775 1.92716 18.2905 1.68363 17.5599 1.31835C16.9511 1.07482 16.2205 0.953061 15.1247 0.831299C14.0288 0.831299 13.7853 0.831299 10.9848 0.831299Z" fill="white"/>
+              <path d="M10.9848 5.70177C8.06249 5.70177 5.74901 8.01525 5.74901 10.9375C5.74901 13.8598 8.06249 16.1733 10.9848 16.1733C13.9071 16.1733 16.2205 13.8598 16.2205 10.9375C16.2205 8.01525 13.9071 5.70177 10.9848 5.70177ZM10.9848 14.3469C9.15834 14.3469 7.57544 12.8857 7.57544 10.9375C7.57544 9.1111 9.03658 7.5282 10.9848 7.5282C12.8112 7.5282 14.3941 8.98934 14.3941 10.9375C14.3941 12.764 12.8112 14.3469 10.9848 14.3469Z" fill="white"/>
+              <path d="M16.3423 6.79763C17.0148 6.79763 17.5599 6.25248 17.5599 5.58001C17.5599 4.90754 17.0148 4.36239 16.3423 4.36239C15.6698 4.36239 15.1247 4.90754 15.1247 5.58001C15.1247 6.25248 15.6698 6.79763 16.3423 6.79763Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#linkedin" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.29005 19.6782H1.15014V6.64966H5.29005V19.6782ZM3.22009 4.82324C1.88071 4.82324 0.906616 3.84914 0.906616 2.50976C0.906616 1.17038 2.00247 0.196289 3.22009 0.196289C4.55947 0.196289 5.53357 1.17038 5.53357 2.50976C5.53357 3.84914 4.55947 4.82324 3.22009 4.82324ZM20.3885 19.6782H16.2486V12.616C16.2486 10.546 15.3963 9.93723 14.1786 9.93723C12.961 9.93723 11.7434 10.9113 11.7434 12.7378V19.6782H7.60352V6.64966H11.4999V8.47609C11.8652 7.62376 13.3263 6.28438 15.3963 6.28438C17.7097 6.28438 20.145 7.62376 20.145 11.6419V19.6782H20.3885Z" fill="white"/>
+            </svg>
+          </a>
+                                </div>
+
+                                <div class="team-item__info">
+                                    <span class="team-item__prof">Co-Founder/CTO</span>
+                                    <h3 class="team-item__name clr-pink">Stan Watts</h3>
+                                </div>
+
+                                <div class="team-item__image">
+                                    <img src="img/team-04.png" alt="avatar">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <div class="team-item__wrapper">
+
+                                <div class="team-item__image">
+                                    <img src="img/team-05.png" alt="avatar">
+                                </div>
+
+                                <div class="team-item__info">
+                                    <span class="team-item__prof">Global Marketing Director</span>
+                                    <h3 class="team-item__name clr-violet">Jorge Telosa Jr.</h3>
+                                </div>
+
+                                <div class="team-item__social">
+                                    <a href="#facebook" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0933 9.93723C20.0933 4.57971 15.7099 0.196289 10.3524 0.196289C4.99487 0.196289 0.61145 4.57971 0.61145 9.93723C0.61145 14.8077 4.14254 18.8258 8.76949 19.5564V12.7378H6.33425V9.93723H8.76949V7.74552C8.76949 5.31028 10.2306 3.97091 12.4223 3.97091C13.5182 3.97091 14.6141 4.21443 14.6141 4.21443V6.64966H13.3964C12.1788 6.64966 11.8135 7.38024 11.8135 8.11081V9.93723H14.4923L14.0052 12.7378H11.6918V19.6782C16.5622 18.9476 20.0933 14.8077 20.0933 9.93723Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="https://twitter.com/el_kriptonario" target="_blank" class="team-item__social-link">
+            <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.41 2.26417C19.6794 2.62946 18.9488 2.75122 18.0965 2.87298C18.9488 2.38593 19.5577 1.65536 19.8012 0.681268C19.0706 1.16831 18.2183 1.41184 17.2442 1.65536C16.5136 0.924791 15.4178 0.437744 14.3219 0.437744C11.7649 0.437744 9.81671 2.87298 10.4255 5.30822C7.13795 5.18646 4.21567 3.60355 2.14572 1.16832C1.04986 2.99474 1.65867 5.30822 3.36334 6.52584C2.75453 6.52584 2.14572 6.28231 1.53691 6.03879C1.53691 7.86522 2.87629 9.56988 4.70272 10.0569C4.09391 10.1787 3.4851 10.3005 2.87629 10.1787C3.36334 11.7616 4.82448 12.9792 6.65091 12.9792C5.18976 14.0751 2.99805 14.6839 0.928101 14.4404C2.75453 15.5362 4.82448 16.2668 7.01619 16.2668C14.4437 16.2668 18.5836 10.0569 18.34 4.33412C19.1924 3.84707 19.9229 3.1165 20.41 2.26417Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#instagram" target="_blank" class="team-item__social-link deactivate">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9848 2.65773C13.6635 2.65773 14.0288 2.65773 15.1247 2.65773C16.0988 2.65773 16.5858 2.90125 16.9511 3.02301C17.4381 3.26654 17.8034 3.3883 18.1687 3.75358C18.534 4.11887 18.7775 4.48415 18.8993 4.9712C19.021 5.33649 19.1428 5.82353 19.2646 6.79763C19.2646 7.89348 19.2646 8.13701 19.2646 10.9375C19.2646 13.7381 19.2646 13.9816 19.2646 15.0774C19.2646 16.0515 19.021 16.5386 18.8993 16.9039C18.6558 17.3909 18.534 17.7562 18.1687 18.1215C17.8034 18.4868 17.4381 18.7303 16.9511 18.852C16.5858 18.9738 16.0988 19.0956 15.1247 19.2173C14.0288 19.2173 13.7853 19.2173 10.9848 19.2173C8.18425 19.2173 7.94073 19.2173 6.84487 19.2173C5.87077 19.2173 5.38373 18.9738 5.01844 18.852C4.53139 18.6085 4.16611 18.4868 3.80082 18.1215C3.43554 17.7562 3.19201 17.3909 3.07025 16.9039C2.94849 16.5386 2.82673 16.0515 2.70497 15.0774C2.70497 13.9816 2.70497 13.7381 2.70497 10.9375C2.70497 8.13701 2.70497 7.89348 2.70497 6.79763C2.70497 5.82353 2.94849 5.33649 3.07025 4.9712C3.31378 4.48415 3.43554 4.11887 3.80082 3.75358C4.16611 3.3883 4.53139 3.14477 5.01844 3.02301C5.38373 2.90125 5.87077 2.77949 6.84487 2.65773C7.94073 2.65773 8.30601 2.65773 10.9848 2.65773ZM10.9848 0.831299C8.18425 0.831299 7.94073 0.831299 6.84487 0.831299C5.74901 0.831299 5.01844 1.07482 4.40963 1.31835C3.80082 1.56187 3.19201 1.92716 2.58321 2.53596C1.9744 3.14477 1.73087 3.63182 1.36559 4.36239C1.12206 4.9712 1.0003 5.70177 0.87854 6.79763C0.87854 7.89348 0.87854 8.25877 0.87854 10.9375C0.87854 13.7381 0.87854 13.9816 0.87854 15.0774C0.87854 16.1733 1.12206 16.9039 1.36559 17.5127C1.60911 18.1215 1.9744 18.7303 2.58321 19.3391C3.19201 19.9479 3.67906 20.1914 4.40963 20.5567C5.01844 20.8002 5.74901 20.922 6.84487 21.0438C7.94073 21.0438 8.30601 21.0438 10.9848 21.0438C13.6635 21.0438 14.0288 21.0438 15.1247 21.0438C16.2205 21.0438 16.9511 20.8002 17.5599 20.5567C18.1687 20.3132 18.7775 19.9479 19.3863 19.3391C19.9951 18.7303 20.2387 18.2432 20.604 17.5127C20.8475 16.9039 20.9692 16.1733 21.091 15.0774C21.091 13.9816 21.091 13.6163 21.091 10.9375C21.091 8.25877 21.091 7.89348 21.091 6.79763C21.091 5.70177 20.8475 4.9712 20.604 4.36239C20.3604 3.75358 19.9951 3.14477 19.3863 2.53596C18.7775 1.92716 18.2905 1.68363 17.5599 1.31835C16.9511 1.07482 16.2205 0.953061 15.1247 0.831299C14.0288 0.831299 13.7853 0.831299 10.9848 0.831299Z" fill="white"/>
+              <path d="M10.9848 5.70177C8.06249 5.70177 5.74901 8.01525 5.74901 10.9375C5.74901 13.8598 8.06249 16.1733 10.9848 16.1733C13.9071 16.1733 16.2205 13.8598 16.2205 10.9375C16.2205 8.01525 13.9071 5.70177 10.9848 5.70177ZM10.9848 14.3469C9.15834 14.3469 7.57544 12.8857 7.57544 10.9375C7.57544 9.1111 9.03658 7.5282 10.9848 7.5282C12.8112 7.5282 14.3941 8.98934 14.3941 10.9375C14.3941 12.764 12.8112 14.3469 10.9848 14.3469Z" fill="white"/>
+              <path d="M16.3423 6.79763C17.0148 6.79763 17.5599 6.25248 17.5599 5.58001C17.5599 4.90754 17.0148 4.36239 16.3423 4.36239C15.6698 4.36239 15.1247 4.90754 15.1247 5.58001C15.1247 6.25248 15.6698 6.79763 16.3423 6.79763Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#linkedin" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.29005 19.6782H1.15014V6.64966H5.29005V19.6782ZM3.22009 4.82324C1.88071 4.82324 0.906616 3.84914 0.906616 2.50976C0.906616 1.17038 2.00247 0.196289 3.22009 0.196289C4.55947 0.196289 5.53357 1.17038 5.53357 2.50976C5.53357 3.84914 4.55947 4.82324 3.22009 4.82324ZM20.3885 19.6782H16.2486V12.616C16.2486 10.546 15.3963 9.93723 14.1786 9.93723C12.961 9.93723 11.7434 10.9113 11.7434 12.7378V19.6782H7.60352V6.64966H11.4999V8.47609C11.8652 7.62376 13.3263 6.28438 15.3963 6.28438C17.7097 6.28438 20.145 7.62376 20.145 11.6419V19.6782H20.3885Z" fill="white"/>
+            </svg>
+          </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                            <div class="team-item__wrapper">
+
+                                <div class="team-item__image">
+                                    <img src="img/team-06.png" alt="avatar">
+                                </div>
+
+                                <div class="team-item__info">
+                                    <span class="team-item__prof">Blockchain Director</span>
+                                    <h3 class="team-item__name clr-cyan">Dominik Töllner</h3>
+                                </div>
+
+                                <div class="team-item__social">
+                                    <a href="#facebook" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0933 9.93723C20.0933 4.57971 15.7099 0.196289 10.3524 0.196289C4.99487 0.196289 0.61145 4.57971 0.61145 9.93723C0.61145 14.8077 4.14254 18.8258 8.76949 19.5564V12.7378H6.33425V9.93723H8.76949V7.74552C8.76949 5.31028 10.2306 3.97091 12.4223 3.97091C13.5182 3.97091 14.6141 4.21443 14.6141 4.21443V6.64966H13.3964C12.1788 6.64966 11.8135 7.38024 11.8135 8.11081V9.93723H14.4923L14.0052 12.7378H11.6918V19.6782C16.5622 18.9476 20.0933 14.8077 20.0933 9.93723Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="https://twitter.com/trickzzter95" target="_blank" class="team-item__social-link">
+            <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.41 2.26417C19.6794 2.62946 18.9488 2.75122 18.0965 2.87298C18.9488 2.38593 19.5577 1.65536 19.8012 0.681268C19.0706 1.16831 18.2183 1.41184 17.2442 1.65536C16.5136 0.924791 15.4178 0.437744 14.3219 0.437744C11.7649 0.437744 9.81671 2.87298 10.4255 5.30822C7.13795 5.18646 4.21567 3.60355 2.14572 1.16832C1.04986 2.99474 1.65867 5.30822 3.36334 6.52584C2.75453 6.52584 2.14572 6.28231 1.53691 6.03879C1.53691 7.86522 2.87629 9.56988 4.70272 10.0569C4.09391 10.1787 3.4851 10.3005 2.87629 10.1787C3.36334 11.7616 4.82448 12.9792 6.65091 12.9792C5.18976 14.0751 2.99805 14.6839 0.928101 14.4404C2.75453 15.5362 4.82448 16.2668 7.01619 16.2668C14.4437 16.2668 18.5836 10.0569 18.34 4.33412C19.1924 3.84707 19.9229 3.1165 20.41 2.26417Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#instagram" target="_blank" class="team-item__social-link deactivate">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9848 2.65773C13.6635 2.65773 14.0288 2.65773 15.1247 2.65773C16.0988 2.65773 16.5858 2.90125 16.9511 3.02301C17.4381 3.26654 17.8034 3.3883 18.1687 3.75358C18.534 4.11887 18.7775 4.48415 18.8993 4.9712C19.021 5.33649 19.1428 5.82353 19.2646 6.79763C19.2646 7.89348 19.2646 8.13701 19.2646 10.9375C19.2646 13.7381 19.2646 13.9816 19.2646 15.0774C19.2646 16.0515 19.021 16.5386 18.8993 16.9039C18.6558 17.3909 18.534 17.7562 18.1687 18.1215C17.8034 18.4868 17.4381 18.7303 16.9511 18.852C16.5858 18.9738 16.0988 19.0956 15.1247 19.2173C14.0288 19.2173 13.7853 19.2173 10.9848 19.2173C8.18425 19.2173 7.94073 19.2173 6.84487 19.2173C5.87077 19.2173 5.38373 18.9738 5.01844 18.852C4.53139 18.6085 4.16611 18.4868 3.80082 18.1215C3.43554 17.7562 3.19201 17.3909 3.07025 16.9039C2.94849 16.5386 2.82673 16.0515 2.70497 15.0774C2.70497 13.9816 2.70497 13.7381 2.70497 10.9375C2.70497 8.13701 2.70497 7.89348 2.70497 6.79763C2.70497 5.82353 2.94849 5.33649 3.07025 4.9712C3.31378 4.48415 3.43554 4.11887 3.80082 3.75358C4.16611 3.3883 4.53139 3.14477 5.01844 3.02301C5.38373 2.90125 5.87077 2.77949 6.84487 2.65773C7.94073 2.65773 8.30601 2.65773 10.9848 2.65773ZM10.9848 0.831299C8.18425 0.831299 7.94073 0.831299 6.84487 0.831299C5.74901 0.831299 5.01844 1.07482 4.40963 1.31835C3.80082 1.56187 3.19201 1.92716 2.58321 2.53596C1.9744 3.14477 1.73087 3.63182 1.36559 4.36239C1.12206 4.9712 1.0003 5.70177 0.87854 6.79763C0.87854 7.89348 0.87854 8.25877 0.87854 10.9375C0.87854 13.7381 0.87854 13.9816 0.87854 15.0774C0.87854 16.1733 1.12206 16.9039 1.36559 17.5127C1.60911 18.1215 1.9744 18.7303 2.58321 19.3391C3.19201 19.9479 3.67906 20.1914 4.40963 20.5567C5.01844 20.8002 5.74901 20.922 6.84487 21.0438C7.94073 21.0438 8.30601 21.0438 10.9848 21.0438C13.6635 21.0438 14.0288 21.0438 15.1247 21.0438C16.2205 21.0438 16.9511 20.8002 17.5599 20.5567C18.1687 20.3132 18.7775 19.9479 19.3863 19.3391C19.9951 18.7303 20.2387 18.2432 20.604 17.5127C20.8475 16.9039 20.9692 16.1733 21.091 15.0774C21.091 13.9816 21.091 13.6163 21.091 10.9375C21.091 8.25877 21.091 7.89348 21.091 6.79763C21.091 5.70177 20.8475 4.9712 20.604 4.36239C20.3604 3.75358 19.9951 3.14477 19.3863 2.53596C18.7775 1.92716 18.2905 1.68363 17.5599 1.31835C16.9511 1.07482 16.2205 0.953061 15.1247 0.831299C14.0288 0.831299 13.7853 0.831299 10.9848 0.831299Z" fill="white"/>
+              <path d="M10.9848 5.70177C8.06249 5.70177 5.74901 8.01525 5.74901 10.9375C5.74901 13.8598 8.06249 16.1733 10.9848 16.1733C13.9071 16.1733 16.2205 13.8598 16.2205 10.9375C16.2205 8.01525 13.9071 5.70177 10.9848 5.70177ZM10.9848 14.3469C9.15834 14.3469 7.57544 12.8857 7.57544 10.9375C7.57544 9.1111 9.03658 7.5282 10.9848 7.5282C12.8112 7.5282 14.3941 8.98934 14.3941 10.9375C14.3941 12.764 12.8112 14.3469 10.9848 14.3469Z" fill="white"/>
+              <path d="M16.3423 6.79763C17.0148 6.79763 17.5599 6.25248 17.5599 5.58001C17.5599 4.90754 17.0148 4.36239 16.3423 4.36239C15.6698 4.36239 15.1247 4.90754 15.1247 5.58001C15.1247 6.25248 15.6698 6.79763 16.3423 6.79763Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#linkedin" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.29005 19.6782H1.15014V6.64966H5.29005V19.6782ZM3.22009 4.82324C1.88071 4.82324 0.906616 3.84914 0.906616 2.50976C0.906616 1.17038 2.00247 0.196289 3.22009 0.196289C4.55947 0.196289 5.53357 1.17038 5.53357 2.50976C5.53357 3.84914 4.55947 4.82324 3.22009 4.82324ZM20.3885 19.6782H16.2486V12.616C16.2486 10.546 15.3963 9.93723 14.1786 9.93723C12.961 9.93723 11.7434 10.9113 11.7434 12.7378V19.6782H7.60352V6.64966H11.4999V8.47609C11.8652 7.62376 13.3263 6.28438 15.3963 6.28438C17.7097 6.28438 20.145 7.62376 20.145 11.6419V19.6782H20.3885Z" fill="white"/>
+            </svg>
+          </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="team-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                            <div class="team-item__wrapper">
+
+                                <div class="team-item__image">
+                                    <img src="img/team-08.png" alt="avatar">
+                                </div>
+
+                                <div class="team-item__info">
+                                    <span class="team-item__prof">Asia Outreach Manager</span>
+                                    <h3 class="team-item__name clr-blue">Ferly Queen</h3>
+                                </div>
+
+                                <div class="team-item__social">
+                                    <a href="#facebook" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.0933 9.93723C20.0933 4.57971 15.7099 0.196289 10.3524 0.196289C4.99487 0.196289 0.61145 4.57971 0.61145 9.93723C0.61145 14.8077 4.14254 18.8258 8.76949 19.5564V12.7378H6.33425V9.93723H8.76949V7.74552C8.76949 5.31028 10.2306 3.97091 12.4223 3.97091C13.5182 3.97091 14.6141 4.21443 14.6141 4.21443V6.64966H13.3964C12.1788 6.64966 11.8135 7.38024 11.8135 8.11081V9.93723H14.4923L14.0052 12.7378H11.6918V19.6782C16.5622 18.9476 20.0933 14.8077 20.0933 9.93723Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="https://twitter.com/CryptorichBNB" target="_blank" class="team-item__social-link">
+            <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.41 2.26417C19.6794 2.62946 18.9488 2.75122 18.0965 2.87298C18.9488 2.38593 19.5577 1.65536 19.8012 0.681268C19.0706 1.16831 18.2183 1.41184 17.2442 1.65536C16.5136 0.924791 15.4178 0.437744 14.3219 0.437744C11.7649 0.437744 9.81671 2.87298 10.4255 5.30822C7.13795 5.18646 4.21567 3.60355 2.14572 1.16832C1.04986 2.99474 1.65867 5.30822 3.36334 6.52584C2.75453 6.52584 2.14572 6.28231 1.53691 6.03879C1.53691 7.86522 2.87629 9.56988 4.70272 10.0569C4.09391 10.1787 3.4851 10.3005 2.87629 10.1787C3.36334 11.7616 4.82448 12.9792 6.65091 12.9792C5.18976 14.0751 2.99805 14.6839 0.928101 14.4404C2.75453 15.5362 4.82448 16.2668 7.01619 16.2668C14.4437 16.2668 18.5836 10.0569 18.34 4.33412C19.1924 3.84707 19.9229 3.1165 20.41 2.26417Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#instagram" target="_blank" class="team-item__social-link deactivate">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9848 2.65773C13.6635 2.65773 14.0288 2.65773 15.1247 2.65773C16.0988 2.65773 16.5858 2.90125 16.9511 3.02301C17.4381 3.26654 17.8034 3.3883 18.1687 3.75358C18.534 4.11887 18.7775 4.48415 18.8993 4.9712C19.021 5.33649 19.1428 5.82353 19.2646 6.79763C19.2646 7.89348 19.2646 8.13701 19.2646 10.9375C19.2646 13.7381 19.2646 13.9816 19.2646 15.0774C19.2646 16.0515 19.021 16.5386 18.8993 16.9039C18.6558 17.3909 18.534 17.7562 18.1687 18.1215C17.8034 18.4868 17.4381 18.7303 16.9511 18.852C16.5858 18.9738 16.0988 19.0956 15.1247 19.2173C14.0288 19.2173 13.7853 19.2173 10.9848 19.2173C8.18425 19.2173 7.94073 19.2173 6.84487 19.2173C5.87077 19.2173 5.38373 18.9738 5.01844 18.852C4.53139 18.6085 4.16611 18.4868 3.80082 18.1215C3.43554 17.7562 3.19201 17.3909 3.07025 16.9039C2.94849 16.5386 2.82673 16.0515 2.70497 15.0774C2.70497 13.9816 2.70497 13.7381 2.70497 10.9375C2.70497 8.13701 2.70497 7.89348 2.70497 6.79763C2.70497 5.82353 2.94849 5.33649 3.07025 4.9712C3.31378 4.48415 3.43554 4.11887 3.80082 3.75358C4.16611 3.3883 4.53139 3.14477 5.01844 3.02301C5.38373 2.90125 5.87077 2.77949 6.84487 2.65773C7.94073 2.65773 8.30601 2.65773 10.9848 2.65773ZM10.9848 0.831299C8.18425 0.831299 7.94073 0.831299 6.84487 0.831299C5.74901 0.831299 5.01844 1.07482 4.40963 1.31835C3.80082 1.56187 3.19201 1.92716 2.58321 2.53596C1.9744 3.14477 1.73087 3.63182 1.36559 4.36239C1.12206 4.9712 1.0003 5.70177 0.87854 6.79763C0.87854 7.89348 0.87854 8.25877 0.87854 10.9375C0.87854 13.7381 0.87854 13.9816 0.87854 15.0774C0.87854 16.1733 1.12206 16.9039 1.36559 17.5127C1.60911 18.1215 1.9744 18.7303 2.58321 19.3391C3.19201 19.9479 3.67906 20.1914 4.40963 20.5567C5.01844 20.8002 5.74901 20.922 6.84487 21.0438C7.94073 21.0438 8.30601 21.0438 10.9848 21.0438C13.6635 21.0438 14.0288 21.0438 15.1247 21.0438C16.2205 21.0438 16.9511 20.8002 17.5599 20.5567C18.1687 20.3132 18.7775 19.9479 19.3863 19.3391C19.9951 18.7303 20.2387 18.2432 20.604 17.5127C20.8475 16.9039 20.9692 16.1733 21.091 15.0774C21.091 13.9816 21.091 13.6163 21.091 10.9375C21.091 8.25877 21.091 7.89348 21.091 6.79763C21.091 5.70177 20.8475 4.9712 20.604 4.36239C20.3604 3.75358 19.9951 3.14477 19.3863 2.53596C18.7775 1.92716 18.2905 1.68363 17.5599 1.31835C16.9511 1.07482 16.2205 0.953061 15.1247 0.831299C14.0288 0.831299 13.7853 0.831299 10.9848 0.831299Z" fill="white"/>
+              <path d="M10.9848 5.70177C8.06249 5.70177 5.74901 8.01525 5.74901 10.9375C5.74901 13.8598 8.06249 16.1733 10.9848 16.1733C13.9071 16.1733 16.2205 13.8598 16.2205 10.9375C16.2205 8.01525 13.9071 5.70177 10.9848 5.70177ZM10.9848 14.3469C9.15834 14.3469 7.57544 12.8857 7.57544 10.9375C7.57544 9.1111 9.03658 7.5282 10.9848 7.5282C12.8112 7.5282 14.3941 8.98934 14.3941 10.9375C14.3941 12.764 12.8112 14.3469 10.9848 14.3469Z" fill="white"/>
+              <path d="M16.3423 6.79763C17.0148 6.79763 17.5599 6.25248 17.5599 5.58001C17.5599 4.90754 17.0148 4.36239 16.3423 4.36239C15.6698 4.36239 15.1247 4.90754 15.1247 5.58001C15.1247 6.25248 15.6698 6.79763 16.3423 6.79763Z" fill="white"/>
+            </svg>
+          </a>
+                                    <a href="#linkedin" target="_blank" class="team-item__social-link deactivate">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.29005 19.6782H1.15014V6.64966H5.29005V19.6782ZM3.22009 4.82324C1.88071 4.82324 0.906616 3.84914 0.906616 2.50976C0.906616 1.17038 2.00247 0.196289 3.22009 0.196289C4.55947 0.196289 5.53357 1.17038 5.53357 2.50976C5.53357 3.84914 4.55947 4.82324 3.22009 4.82324ZM20.3885 19.6782H16.2486V12.616C16.2486 10.546 15.3963 9.93723 14.1786 9.93723C12.961 9.93723 11.7434 10.9113 11.7434 12.7378V19.6782H7.60352V6.64966H11.4999V8.47609C11.8652 7.62376 13.3263 6.28438 15.3963 6.28438C17.7097 6.28438 20.145 7.62376 20.145 11.6419V19.6782H20.3885Z" fill="white"/>
+            </svg>
+          </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="marquee marquee-2 team-marquee">
+                        <div class="marquee__inner marquee__inner-2" aria-hidden="true">
+                            <span>CRAFTY METAVERSE   ✦   CRAFTY METAVERSE   ✦</span>
+                            <span>CRAFTY METAVERSE   ✦   CRAFTY METAVERSE   ✦</span>
+                            <span>CRAFTY METAVERSE   ✦   CRAFTY METAVERSE   ✦</span>
+                            <span>CRAFTY METAVERSE   ✦   CRAFTY METAVERSE   ✦</span>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="social">
+
+                    <div class="social__heading roadmap__heading">
+                        <h3 class="social__title hero__title">
+                            Questions
+                        </h3>
+                        <h2 class="social__main-title hero__main-title">
+                            Social media
+                        </h2>
+                    </div>
+
+                    <div class="social__container">
+                        <div class="flex-wrapper">
+                            <div class="social__container-item social__container-item-1" data-aos="move-right-1" data-aos-offset="300" data-aos-delay="300">
+
+                                <a href="https://twitter.com/CmetaToken" target="_blank" class="social__container-link">
+                                    <div class="first-layer">
+                                        <img src="img/frame-1.svg" alt="frame">
+
+                                        <div class="second-layer second-layer-1">
+                                            <img src="img/second-layer-1.svg" alt="second layer">
+                                            <img class="layer-image" src="img/twitter-glow.svg" alt="twitter icon">
+                                            <h4 class="layer-text layer-text-1">Twitter</h4>
+                                        </div>
+                                        <div class="third-layer third-layer-1">
+                                            <img src="img/third-layer-1.svg" alt="third layer">
+
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="social__container-item social__container-item-2" data-aos="move-right-2" data-aos-offset="300" data-aos-delay="100">
+                                <a href="https://t.me/Cmetaverse" target="_blank" class="social__container-link">
+
+                                    <div class="first-layer">
+                                        <img src="img/frame-2.svg" alt="frame">
+
+                                        <div class="second-layer second-layer-2">
+                                            <img src="img/second-layer-2.svg" alt="second layer">
+                                            <img class="layer-image" src="img/telegram-glow.svg" alt="twitter icon">
+                                            <h4 class="layer-text layer-text-2">Telegram</h4>
+                                        </div>
+                                        <div class="third-layer third-layer-2">
+                                            <img src="img/third-layer-2.svg" alt="third layer">
+
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="flex-wrapper">
+                            <div class="social__container-item social__container-item-3" data-aos="move-left-2" data-aos-offset="300" data-aos-delay="100">
+                                <a href="https://www.youtube.com/c/CraftyMetaverse" target="_blank" class="social__container-link">
+
+                                    <div class="first-layer ">
+                                        <img src="img/frame-3.svg" alt="frame">
+
+                                        <div class="second-layer second-layer-3">
+                                            <img src="img/second-layer-3.svg" alt="second layer">
+                                            <img class="layer-image" src="img/youtube-glow.svg" alt="twitter icon">
+                                            <h4 class="layer-text layer-text-3">Youtube</h4>
+                                        </div>
+                                        <div class="third-layer third-layer-3">
+                                            <img src="img/third-layer-3.svg" alt="third layer">
+
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                            </div>
+                            <div class="social__container-item social__container-item-4" data-aos="move-left-1" data-aos-offset="300" data-aos-delay="300">
+                                <a href="https://t.co/dQkZpE0gvw" target="_blank" class="social__container-link">
+
+                                    <div class="first-layer">
+                                        <img src="img/frame-4.svg" alt="frame">
+
+                                        <div class="second-layer second-layer-4">
+                                            <img src="img/second-layer-4.svg" alt="second layer">
+                                            <img class="layer-image" src="img/discord-glow.svg" alt="twitter icon">
+                                            <h4 class="layer-text layer-text-4">Discord</h4>
+                                        </div>
+                                        <div class="third-layer third-layer-4">
+                                            <img src="img/third-layer-4.svg" alt="third layer">
+
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__location">
+                <img src="img/planet.svg" alt="planet">
+                <p class="footer__descr">
+                    Based in US <br> Active worldwide
+                </p>
+            </div>
+            <div class="contact-wrapper">
+                <a target="_blank" href="mailto:info@craftymetaverse.com" class="footer__contact">CONTACT</a>
+                <a target="_blank" href="https://twitter.com/CmetaToken" class="footer__contact footer__contact_twitter">
+        <img src="img/twitter.svg" alt="twitter">
+      </a>
+            </div>
+            <div class="footer__mail">
+
+                <div class="footer-marquee">
+                    <div class="footer-marquee-inner" aria-hidden="true">
+                        <span> info@craftymetaverse.com   info@craftymetaverse.com   </span>
+                        <span> info@craftymetaverse.com   info@craftymetaverse.com   </span>
+                        <span> info@craftymetaverse.com   info@craftymetaverse.com   </span>
+                        <span> info@craftymetaverse.com   info@craftymetaverse.com   </span>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
